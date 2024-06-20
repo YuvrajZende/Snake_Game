@@ -41,7 +41,7 @@ while game_on:
         game_on = False
         scoreboard.game_over()
 
-    # detection of snake with its body
+    # detecting collision of snake with its body
     for segment in snake.segment[1:]:
         if snake.head.distance(segment) < 10:
             game_on = False
